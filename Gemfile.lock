@@ -1,0 +1,22 @@
+GEM
+  remote: https://www.rubygems.org/
+  specs:
+    addressable (2.3.4)
+    coderay (1.0.9)
+    heel (3.0.2)
+      coderay (~> 1.0.7)
+      launchy (~> 2.2)
+      mime-types (~> 1.19)
+      puma (~> 1.0)
+    launchy (2.3.0)
+      addressable (~> 2.3)
+    mime-types (1.22)
+    puma (1.6.3)
+      rack (~> 1.2)
+    rack (1.5.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  heel

@@ -1,0 +1,45 @@
+//@import 'stylesheets/reset.css';
+//@import 'stylesheets/demo.css';
+@import 'grid.less';
+
+
+//////////
+// GRID //
+//////////
+
+// Specify the number of columns and set column and gutter widths
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+// Uncomment the definition below for a percentage-based layout
+// @total-width: 100%;
+
+
+////////////
+// LAYOUT //
+////////////
+
+// center the contents
+#page {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+// header
+#logo { .column(4); }
+nav.main { .column(4); 
+  ul { .row(8); 
+    li { .column(4, 8); }
+  }
+}
+
+// main and sidebar
+#maincolumn {
+  .column(9);
+}
+
+#sidebar {
+  .column(3);
+}
