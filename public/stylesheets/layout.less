@@ -27,19 +27,26 @@
   overflow: hidden;
 }
 
+// decorations
+nav a { text-decoration: none; }
+
 // header
-#logo { .column(4); }
-nav.main { .column(4); 
-  ul { .row(8); 
-    li { .column(4, 8); }
-  }
-}
+#masthead { padding-top: 24px; padding-bottom: 24px; .clearfix(); }
+#site-name { .column(2); }
+nav { .column(8); .push(2); }
+nav > ul { .row(8); }
+nav > ul > li { .column(2,8); }
 
-// main and sidebar
-#maincolumn {
-  .column(9);
-}
+// splash
+#splash { padding-top: 72px; padding-bottom: 72px; .clearfix(); }
+#splash > article { .column(7); }
+#splash h1 { font-size: 64px; line-height: 72px; margin-bottom: 24px; }
+#splash h2 { font-size: 36px; line-height: 48px; margin-bottom: 24px; }
 
-#sidebar {
-  .column(3);
-}
+#get-involved { .column(3); .push(1); .pull(1); margin-top: 216px; text-align: center; }
+#get-involved a { font-size: 32px; line-height: 48px; }
+
+
+// Community Teasers
+#community-teasers { padding-top: 24px; .clearfix(); } 
+#community-teasers li { .column(4) }
