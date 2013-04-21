@@ -1,0 +1,28 @@
+.background-gradient(@start-color, @end-color) {
+  background:-moz-linear-gradient(top, @start-color 0%, @end-color 100%);
+  background:-webkit-gradient(linear,left top,left bottom,color-stop(0%,@start-color),color-stop(100%,@end-color));
+  background:-webkit-linear-gradient(top,@start-color 0%,@end-color 100%);
+  background:-o-linear-gradient(top,@start-color 0%,@end-color 100%);
+  background:-ms-linear-gradient(top,@start-color 0%,@end-color 100%);
+  background:linear-gradient(top,@start-color 0%,@end-color 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='@start-color',endColorstr='@end-color',GradientType=0);
+}
+
+.border-radius(@radius) {
+  border-radius: @radius;
+  -moz-border-radius: @radius;
+  -webkit-border-radius: @radius;
+}
+
+.button-big {
+  display: block;
+  color:#fff;
+  padding: 8px;
+  .border-radius(4px);
+  background: #333;
+  /*
+  padding: 7px;
+  border: 1px solid #1A87B9;
+  .background-gradient(#25A6E1, #188BC0);
+  */
+}

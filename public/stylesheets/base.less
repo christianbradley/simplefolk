@@ -1,34 +1,71 @@
+@import url(http://fonts.googleapis.com/css?family=Mate+SC|Port+Lligat+Slab|Amatic+SC|Montserrat|Vollkorn:400italic,400);
+
 /* html, body { font-family: "Neucha", cursive; } */
 /* Settings */
 /* font sizes in pixels - only used for body; will be converted to ems */
-h1,h2,h3,h4,
+
+
+h1,h2,h3,h4 { 
+  font-family: "Port Lligat Slab";
+  font-size: 22px; line-height: 24px; margin-bottom: 16px;
+} 
+
 blockquote, h5, h6, iframe, label, p, pre, address, td, th, ul, ol, dl, dd, hr, li,
 table {
-  font-size: 18px;
+  font-family: Vollkorn;
+  font-size: 16px;
   line-height: 24px;
   margin-top: 0;  
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   padding: 0;
 }
+
 small {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 16px;
   margin-top: 0px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 em { font-style: italic; }
 
-// forms
+// links
+a { text-decoration: none; }
 
-input[type=submit],
-input[type=text],
-input[type=email] { 
-  display: block; 
-  font-size: 14px;
-  line-height: 18px;
-  height: 22px;
-  border: 1px solid;
-  padding: 0; margin: 0;
+#site-name {
+  font-size: 36px; 
+  line-height: 40px; 
+  font-family: "Amatic SC", arial, sans-serif; 
 }
 
+nav a { 
+  font-size: 18px; 
+  line-height: 40px; 
+  font-family: "Port Lligat Slab", arial, sans-serif; 
+  text-transform: uppercase; 
+}
+
+#splash h1 { 
+  font-family: "Mate SC"; 
+  text-transform: uppercase; 
+  font-size: 48px; 
+  line-height: 48px; 
+  margin-bottom: 24px; }
+
+#splash h2 { 
+  font-family: "Port Lligat Slab";
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 24px; }
+
+#splash p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#get-involved { 
+  font-family: "Montserrat";
+  font-size: 16px; 
+  line-height: 24px;  
+  text-transform: uppercase;
+}
